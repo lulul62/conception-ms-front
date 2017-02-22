@@ -1,72 +1,63 @@
-<!--[if IE 6]> <body class="ie6 oldie no-js"> <![endif]-->
-<!--[if IE 7]> <body class="ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8]> <body class="ie8 oldie no-js"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<body class="no-js en"> <!--<![endif]-->
-<div class="toolbar">
-    <!--onclick="this.select();"-->
-    <div class="holder">
-        <div id="add-room" class="add button">Add Room</div>
-    </div>
-    <div class="add button">
-        <select id="s" >
-            <option data-w="9" data-h="10" value="90m²">90m²</option>
-            <option data-w="7" data-h="10" value="70m²">70m²</option>
-            <option data-w="6" data-h="10" value="60m²">60m²</option>
-            <option data-w="5" data-h="10" value="50m²">50m²</option>
-            <option data-w="10" data-h="4" value="40m²">40m²</option>
-            <option data-w="3" data-h="10" value="30m²">30m²</option>
-            <option data-w="10" data-h="2" value="20m²">20m²</option>
-            <option data-w="1" data-h="10" value="10m²">10m²</option>
-            <option data-w="1" data-h="5" value="5m²">5m²</option>
-            <option data-w="1" data-h="2" value="2m²">2m²</option>
-            <option data-w="1" data-h="1" value="1m²">1m²</option>
-        </select>
-    </div>
-    <div class="option">
-        <span class="label">Sélection Multiple</span>
-        <INPUT id="sMultiple" class="checkbox" type="checkbox" name="nom" value="selection multiple"/>
-        <label for="sMultiple"></label>
-    </div>
-    <div class="option">
-        <div class="add button">
-            <div id="buttonRotation">rotation</div>
+<div class="ng-controller=View1Ctrl as vm">
+    <div class="toolbar">
+        <!--onclick="this.select();"-->
+        <div class="holder">
+            <div id="add-room" class="add button">Add Room</div>
         </div>
         <div class="add button">
-            <div id="buttonFix">Figer</div>
+            <select id="s" >
+                <option data-w="9" data-h="10" value="90m²">90m²</option>
+                <option data-w="7" data-h="10" value="70m²">70m²</option>
+                <option data-w="6" data-h="10" value="60m²">60m²</option>
+                <option data-w="5" data-h="10" value="50m²">50m²</option>
+                <option data-w="10" data-h="4" value="40m²">40m²</option>
+                <option data-w="3" data-h="10" value="30m²">30m²</option>
+                <option data-w="10" data-h="2" value="20m²">20m²</option>
+                <option data-w="1" data-h="10" value="10m²">10m²</option>
+                <option data-w="1" data-h="5" value="5m²">5m²</option>
+                <option data-w="1" data-h="2" value="2m²">2m²</option>
+                <option data-w="1" data-h="1" value="1m²">1m²</option>
+            </select>
         </div>
-        <div class="add button">
-            <div id="buttonSupp">Supprimer</div>
+        <div class="option">
+            <span class="label">Sélection Multiple</span>
+            <INPUT id="sMultiple" class="checkbox" type="checkbox" name="nom" value="selection multiple"/>
+            <label for="sMultiple"></label>
+        </div>
+        <div class="option">
+            <div class="add button">
+                <div id="buttonRotation">rotation</div>
+            </div>
+            <div class="add button">
+                <div id="buttonFix">Figer</div>
+            </div>
+            <div class="add button">
+                <div id="buttonSupp">Supprimer</div>
+            </div>
+        </div>
+        <div class="options">
+            <span class="label">Size:</span>
+            <input class="checkbox" id="checkbox-2" type="checkbox" name="area" checked="checked"></input>
+            <label for="checkbox-2"></label>
         </div>
     </div>
-    <div class="options">
-        <span class="label">Size:</span>
-        <input class="checkbox" id="checkbox-2" type="checkbox" name="area" checked="checked"></input>
-        <label for="checkbox-2"></label>
+
+    <div class="size toggle-table" title="Details">
+        Total floor size:<span></span>
     </div>
-</div>
 
-<div class="size toggle-table" title="Details">
-    Total floor size:<span></span>
-</div>
+    <div class="details toggle-table"><ul class="table"><ul></div>
 
-<div class="details toggle-table"><ul class="table"><ul></div>
+    <div class="container"></div>
 
-<div class="container"></div>
-
-<div class="furniture">
-    <div class="f-element" id="">
-        <div class="fbody">
-            <a href="#" class="delete" title="Delete"></a>
-            <div class="width"></div>
-            <div class="height"></div>
+    <div class="furniture">
+        <div class="f-element" id="">
+            <div class="fbody">
+                <a href="#" class="delete" title="Delete"></a>
+                <div class="width"></div>
+                <div class="height"></div>
+            </div>
         </div>
     </div>
+
 </div>
-<script type="text/javascript" src="script/jquery.js"></script>
-<script type="text/javascript" src="script/jquery-ui.js"></script>
-<script type="text/javascript" src="script/jquery.ui.resizable.snap.ext.v1.7.min.js"></script>
-<script type="text/javascript" src="spectrum/spectrum.js"></script>
-<script type="text/javascript" src="spectrum/color-script.js"></script>
-<script type="text/javascript" src="spacemixer/spacemixer.js"></script>
-</body>
